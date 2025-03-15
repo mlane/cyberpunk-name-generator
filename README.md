@@ -62,3 +62,14 @@ This project is **open-source**!
 🚀 **[Try cyberpunk-name-generator](https://cyberpunk-name-generator.com)** | ⭐ **Star this project on GitHub!**
 
 ---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+You are **free to use, modify, distribute, and share** this project with no restrictions, as long as the original
+license and copyright notice are included.
+
+### 📄 Full License
+
+The full license text is available in the [`LICENSE.md`](./LICENSE.md) file.
