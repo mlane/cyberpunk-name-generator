@@ -28,7 +28,7 @@
   ],
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && cp data.json dist/data.json",
+    "build": "astro build && cp cyberpunk_names.json dist/cyberpunk_names.json",
     "start": "astro preview",
     "format": "prettier --write .",
     "lint": "eslint . --ext .astro,.ts,.md --fix",
