@@ -22,16 +22,6 @@
         "singleQuote": true,
         "jsxSingleQuote": true
       }
-    },
-    {
-      "files": "*.md",
-      "options": {
-        "parser": "markdown",
-        "semi": false,
-        "singleQuote": true,
-        "arrowParens": "avoid",
-        "embeddedLanguageFormatting": "off"
-      }
     }
   ]
 }

@@ -1,5 +1,8 @@
 ---
+import { generateIdentityId } from 'src/utils'
 import '../global.css'
+
+const identityId = generateIdentityId()
 ---
 
 <html lang='en'>
@@ -9,34 +12,50 @@ import '../global.css'
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <meta name='generator' content={Astro.generator} />
     <title>Cyberpunk Name Generator – AI-Powered Cyberpunk Alias Creator</title>
-    <meta 
-      name='description' 
-      content='Instantly generate unique cyberpunk names and futuristic lore. AI-powered cyberpunk alias generator for RPGs, writers, and worldbuilders.' 
+    <meta
+      name='description'
+      content='Instantly generate unique cyberpunk names and futuristic lore. AI-powered cyberpunk alias generator for RPGs, writers, and worldbuilders.'
     />
-    <meta 
-      name='keywords' 
-      content='cyberpunk name generator, cyberpunk names, futuristic name generator, AI name generator, cyberpunk alias, RPG name generator, hacker name generator, dystopian names' 
+    <meta
+      name='keywords'
+      content='cyberpunk name generator, cyberpunk names, futuristic name generator, AI name generator, cyberpunk alias, RPG name generator, hacker name generator, dystopian names'
     />
     <meta name='author' content='Cyberpunk Name Generator Team' />
     <meta name='robots' content='index, follow' />
-    <meta property='og:title' content='Cyberpunk Name Generator – AI-Powered Cyberpunk Alias Creator' />
-    <meta 
-      property='og:description' 
-      content='Generate cyberpunk names and backstories instantly. Perfect for writers, RPG players, and worldbuilders. AI-powered & open-source.' 
+    <meta
+      property='og:title'
+      content='Cyberpunk Name Generator – AI-Powered Cyberpunk Alias Creator'
+    />
+    <meta
+      property='og:description'
+      content='Generate cyberpunk names and backstories instantly. Perfect for writers, RPG players, and worldbuilders. AI-powered & open-source.'
     />
     <meta property='og:url' content='https://cyberpunk-name-generator.com' />
     <meta property='og:type' content='website' />
     <meta name='twitter:card' content='summary_large_image' />
-    <meta name='twitter:title' content='Cyberpunk Name Generator – AI-Powered Cyberpunk Alias Creator' />
-    <meta 
-      name='twitter:description' 
-      content='Generate futuristic cyberpunk names and lore instantly. AI-powered & free to use.' 
+    <meta
+      name='twitter:title'
+      content='Cyberpunk Name Generator – AI-Powered Cyberpunk Alias Creator'
+    />
+    <meta
+      name='twitter:description'
+      content='Generate futuristic cyberpunk names and lore instantly. AI-powered & free to use.'
     />
     <link rel='canonical' href='https://cyberpunk-name-generator.com' />
   </head>
   <body>
-    <main class='max-w-3xl mx-auto py-10 px-6'>
-      Cyberpunk Name Generator
+    <main>
+      <h2 class='subheading'>Step into the Future.</h2>
+      <h1>Cyberpunk Name Generator</h1>
+      <p>
+        Generate unique cyberpunk names and lore instantly. Perfect for writers,
+        RPG players, and worldbuilders. AI-powered & open-source.
+      </p>
+      <footer>
+        <a href={`/identity/${identityId}`} class='button'
+          >Generate Cyberpunk Identity</a
+        >
+      </footer>
     </main>
   </body>
 </html>

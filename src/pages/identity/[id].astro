@@ -1,0 +1,112 @@
+---
+import '../../global.css'
+import { generateGridPattern, generateIdentityId } from 'src/utils'
+import cyberpunkNames from '../../../cyberpunk_names.json'
+
+export async function getStaticPaths() {
+  return (
+    cyberpunkNames?.map(entry => ({
+      params: {
+        id: entry.id,
+      },
+      props: entry,
+    })) ?? []
+  )
+}
+
+const identityId = generateIdentityId()
+const identityData = Astro.props ?? {}
+const {
+  affiliation,
+  characterClass,
+  colorScheme,
+  glitchSeed,
+  lore,
+  name,
+  notoriety,
+} = identityData ?? {}
+const gridPattern = generateGridPattern({
+  colorScheme,
+  glitchSeed,
+})
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{name} – Cyberpunk Name & Lore</title>
+    <meta
+      name='description'
+      content='{lore} - A {characterClass} affiliated with {affiliation}. Notoriety level: {notoriety}/100.'
+    />
+    <meta
+      name='keywords'
+      content='cyberpunk name, cyberpunk alias, futuristic identity, AI name generator, cyberpunk lore, {name}, {charClass}, {affiliation}'
+    />
+    <meta name='author' content='Cyberpunk Name Generator Team' />
+    <meta name='robots' content='index, follow' />
+    <meta property='og:title' content='{name} – Cyberpunk Name & Lore' />
+    <meta
+      property='og:description'
+      content='{lore} - A {characterClass} affiliated with {affiliation}. Notoriety level: {notoriety}/100.'
+    />
+    <meta property='og:image' content='{ogImage}' />
+    <meta property='og:url' content='{pageUrl}' />
+    <meta property='og:type' content='article' />
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:title' content='{name} – Cyberpunk Name & Lore' />
+    <meta
+      name='twitter:description'
+      content='{lore} - A {characterClass} affiliated with {affiliation}. Notoriety: {notoriety}/100.'
+    />
+    <meta name='twitter:image' content='{ogImage}' />
+    <link rel='canonical' href='{pageUrl}' />
+  </head>
+  <body>
+    <main>
+      <h2 class='identity-header'>Cyberpunk Identity</h2>
+      <section class='identity'>
+        <div class='identity-avatar'>
+          {
+            gridPattern?.map(row => (
+              <>
+                {row?.map(colorScheme => (
+                  <div class={`identity-avatar-cell ${colorScheme}`} />
+                ))}
+              </>
+            ))
+          }
+        </div>
+        <h1 class='identity-name'>{name}</h1>
+        <p class='identity-lore'>{lore}</p>
+        <div class='identity-attributes'>
+          <p>
+            <b>Class:</b>
+            <span>{characterClass}</span>
+          </p>
+          <p>
+            <b>Affiliation:</b>
+            <span>{affiliation}</span>
+          </p>
+          <p>
+            <b>Notoriety:</b>
+            <span>{notoriety}/100</span>
+          </p>
+        </div>
+      </section>
+      <footer>
+        <a href={`/identity/${identityId}`} class='button'
+          >Generate New Identity</a
+        >
+        <hr />
+        <a
+          href='https://github.com/cyberpunk-name-generator/cyberpunk-name-generator'
+          >GitHub</a
+        >
+      </footer>
+    </main>
+  </body>
+</html>

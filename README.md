@@ -41,13 +41,10 @@ Whether you're a **netrunner, rogue AI, hacker, or neon street mercenary**, this
 
 ## 🔧 Tech Stack
 
-| **Technology**     | **Usage**                       |
-| ------------------ | ------------------------------- |
-| **Astro**          | Fast, SEO-optimized static site |
-| **TailwindCSS**    | Futuristic & sleek UI           |
-| **Vercel**         | Instant & scalable deployment   |
-| **OpenAI GPT API** | AI-generated cyberpunk names    |
-| **GitHub Actions** | Automates daily name updates    |
+| **Technology** | **Usage**                       |
+| -------------- | ------------------------------- |
+| **Astro**      | Fast, SEO-optimized static site |
+| **Vercel**     | Instant & scalable deployment   |
 
 ---
 
@@ -55,9 +52,18 @@ Whether you're a **netrunner, rogue AI, hacker, or neon street mercenary**, this
 
 This project is **open-source**!
 
-1. Fork the repo & add your own **cyberpunk names**.
-2. Improve the UI or suggest features.
-3. Submit a PR – Your name might make it into the generator!
+1. **Suggest new cyberpunk identities** in [`cyberpunk_names.json`](cyberpunk_names.json).
+2. **Improve the UI** – Found a bug or want to enhance the experience? Open a PR!
+3. **Star the repo** ⭐ to support the project.
+
+### How to Run Locally
+
+```bash
+git clone https://github.com/mlane/cyberpunk-name-generator.git
+cd cyberpunk-name-generator
+npm install
+npm run dev
+```
 
 🚀 **[Try cyberpunk-name-generator](https://cyberpunk-name-generator.com)** | ⭐ **Star this project on GitHub!**
 
