@@ -1,6 +1,6 @@
 ---
 import '../../global.css'
-import { generateGridPattern, generateIdentityId } from 'src/utils'
+import { generateGridPattern } from 'src/utils'
 import cyberpunkNames from '../../../cyberpunk_names.json'
 
 export async function getStaticPaths() {
@@ -14,7 +14,6 @@ export async function getStaticPaths() {
   )
 }
 
-const identityId = generateIdentityId()
 const identityData = Astro.props ?? {}
 const {
   affiliation,
@@ -96,9 +95,7 @@ const gridPattern = generateGridPattern({
         </div>
       </section>
       <footer>
-        <a href={`/identity/${identityId}`} class='button'
-          >Generate New Identity</a
-        >
+        <a id='identity-button' class='button'>Generate New Identity</a>
         <hr />
         <a
           href='https://github.com/cyberpunk-name-generator/cyberpunk-name-generator'
@@ -108,3 +105,15 @@ const gridPattern = generateGridPattern({
     </main>
   </body>
 </html>
+
+---
+
+<script type='module'>
+  // eslint-disable-next-line prettier/prettier
+  import { generateIdentityId } from '/src/utils.js'
+
+  document.getElementById('identity-button').addEventListener('click', () => {
+    const updatedIdentityId = generateIdentityId()
+    window.location.href = `/identity/${updatedIdentityId}`
+  })
+</script>
