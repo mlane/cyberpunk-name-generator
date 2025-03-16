@@ -1,5 +1,10 @@
 # ⚡ Cyberpunk Name Generator – Create Your Future Alias
 
+## 🎥 Demo
+[Watch the Demo](https://github.com/user-attachments/assets/c17f8635-144b-4a31-8fc7-5cb212d2e8e0)
+
+---
+
 **[Try it Live → cyberpunk-name-generator.com](https://cyberpunk-name-generator.com)** 🚀  
 Generate your **cyberpunk identity** instantly. Perfect for worldbuilding, RPGs, gaming handles, writing, and futuristic aliases.
 
