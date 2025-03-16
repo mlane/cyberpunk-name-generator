@@ -103,17 +103,23 @@ const gridPattern = generateGridPattern({
         >
       </footer>
     </main>
+    <script is:inline>
+      async function generateIdentityId() {
+        // eslint-disable-next-line prettier/prettier
+        const response = await fetch('/cyberpunk_names.json')
+        const cyberpunkNames = await response.json()
+        return (
+          cyberpunkNames?.[Math.floor(Math.random() * cyberpunkNames?.length)]
+            ?.id ?? cyberpunkNames?.[0]?.id
+        )
+      }
+
+      document
+        .getElementById('identity-button')
+        ?.addEventListener('click', async () => {
+          const newId = await generateIdentityId()
+          window.location.href = `/identity/${newId}`
+        })
+    </script>
   </body>
 </html>
-
----
-
-<script type='module'>
-  // eslint-disable-next-line prettier/prettier
-  import { generateIdentityId } from '/src/utils.js'
-
-  document.getElementById('identity-button').addEventListener('click', () => {
-    const updatedIdentityId = generateIdentityId()
-    window.location.href = `/identity/${updatedIdentityId}`
-  })
-</script>
