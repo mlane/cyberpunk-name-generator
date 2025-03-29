@@ -21,7 +21,7 @@ Whether you're a **netrunner, rogue AI, hacker, or neon street mercenary**, this
 ✅ **Fast & free – No ads, no login required**  
 ✅ **Open-source & community-driven**
 
-🔗 **[Try the Generator](https://cyberpunk-name-generator.com)** | 🌟 **Star the Repo!**
+🔗 **[Try the Generator](https://cyberpunk-name-generator.com)**
 
 ---
 
@@ -69,8 +69,6 @@ cd cyberpunk-name-generator
 npm install
 npm run dev
 ```
-
-🚀 **[Try cyberpunk-name-generator](https://cyberpunk-name-generator.com)** | ⭐ **Star this project on GitHub!**
 
 ---
 
