@@ -1,6 +1,7 @@
 # ⚡ Cyberpunk Name Generator – Create Your Future Alias
 
 ## 🎥 Demo
+
 [Watch the Demo](https://github.com/user-attachments/assets/c17f8635-144b-4a31-8fc7-5cb212d2e8e0)
 
 ---
@@ -81,4 +82,4 @@ license and copyright notice are included.
 
 ### 📄 Full License
 
-The full license text is available in the [`LICENSE.md`](./LICENSE.md) file.
+The full license text is available in the [LICENSE](./LICENSE) file.
