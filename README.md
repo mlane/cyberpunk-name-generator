@@ -1,6 +1,6 @@
-# ⚡ Cyberpunk Name Generator – Create Your Future Alias
+# Cyberpunk Name Generator – Create Your Future Alias
 
-## 🎥 Demo
+## Demo
 
 [Watch the Demo](https://github.com/user-attachments/assets/c17f8635-144b-4a31-8fc7-5cb212d2e8e0)
 
@@ -11,7 +11,7 @@ Generate your **cyberpunk identity** instantly. Perfect for worldbuilding, RPGs,
 
 ---
 
-## 🔥 What is Cyberpunk Name Generator?
+## What is Cyberpunk Name Generator?
 
 Ever needed a **futuristic name** that fits the cyberpunk world?  
 Whether you're a **netrunner, rogue AI, hacker, or neon street mercenary**, this **random name generator** gives you **epic cyberpunk aliases** with unique backstories.
@@ -22,11 +22,11 @@ Whether you're a **netrunner, rogue AI, hacker, or neon street mercenary**, this
 ✅ **Fast & free – No ads, no login required**  
 ✅ **Open-source & community-driven**
 
-🔗 **[Try the Generator](https://cyberpunk-name-generator.com)**
+**[Try the Generator](https://cyberpunk-name-generator.com)**
 
 ---
 
-## 💡 Example Cyberpunk Names
+## Example Cyberpunk Names
 
 - **NeonVoid** – Hacker specializing in memory heists.
 - **SynthOracle** – Rogue AI whispering lost futures.
@@ -36,7 +36,7 @@ Whether you're a **netrunner, rogue AI, hacker, or neon street mercenary**, this
 
 ---
 
-## 🌍 How It Works
+## How It Works
 
 1. Click “Generate” to get a **random cyberpunk name & backstory**.
 2. Lock in parts of the name or **re-roll everything**.
@@ -45,7 +45,7 @@ Whether you're a **netrunner, rogue AI, hacker, or neon street mercenary**, this
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 | **Technology** | **Usage**                       |
 | -------------- | ------------------------------- |
@@ -54,7 +54,7 @@ Whether you're a **netrunner, rogue AI, hacker, or neon street mercenary**, this
 
 ---
 
-## 🔥 Want to Contribute?
+## Want to Contribute?
 
 This project is **open-source**!
 
@@ -73,7 +73,7 @@ npm run dev
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the **MIT License**.
 
